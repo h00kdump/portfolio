@@ -16,7 +16,7 @@
 /dist/mailer
 
 # audio sending
-/src/audio/Бхагавад_гита_Как_она_есть_В_переводе_Шрилы_Прабхупады.mp3
+/src/audio
 
 # misc
 .DS_Store
