@@ -1,13 +1,16 @@
-h1 {
-    font-size: 208px;
-    line-height: 100%;
-    color: blue;
-    font-weight: 700;
-}
-
-p {
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 140%;
+.title {
+    &__fz16 {
+        font-family: 'Poppins Medium';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    &__fz48 {
+        font-family: 'Poppins Bold';
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 100%;
+    }
 }
 
