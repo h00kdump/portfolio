@@ -1,0 +1,16 @@
+.title {
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+    &_fz14 {
+        font-size: 14px;
+    }
+    &_fz16 {
+        font-size: 16px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        line-height: 100%;
+    }
+}
