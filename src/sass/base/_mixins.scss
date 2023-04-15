@@ -3,7 +3,9 @@
         content: '';
         display: inline-block;
         position: absolute;
-        
+        top: -25%;
+        left: 0px;
+        z-index: -1;
         width: 36px;
         height: 36px;
         background: $main-color;
