@@ -1,6 +1,7 @@
 .hamburger {
     cursor: pointer;
     position: fixed;
+    z-index: 2;
     top: 20px;
     right: 30px;
     height: 21px;
@@ -22,7 +23,7 @@
 
 .menu {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0px;
     left: -100%;
     visibility: hidden;
