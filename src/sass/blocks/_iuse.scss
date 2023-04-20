@@ -1,0 +1,88 @@
+.iuse {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-2 {
+            display: block;
+            position: relative;
+            text-align: left;
+            padding-left: 14px;
+            z-index: 1;
+            @include before_circle;
+            &:before {
+                left: 0px;
+                top: 46%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__skill {
+        padding: 30px;
+        border: 1px solid $black;
+        h4 {
+            margin-top: 20px;
+        }
+        &-wrapper {
+            margin-top: 60px;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(270px, auto));
+            column-gap: 12px;
+            grid-template-rows: minmax(270px, auto);
+            row-gap: 12px;
+        }
+        &-icon {
+            height: 65px;
+            display: flex;
+            align-items: center;
+        }
+        img {
+            max-height: 65px;
+        }
+        &-text {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 12px;
+            color: $black;
+        }
+    }
+    &__percent {
+        margin-top: 30px;
+        &-wrapper {
+            margin-top: 90px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(350px, auto));
+            column-gap: 45px;
+            grid-template-rows: minmax(70px, auto);
+        }
+        &-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-loader {
+            height: 14px;
+            background-color: $main-color;
+            border-radius: 4px;
+
+            &-wrapper {
+                margin-top: 20px;
+                width: 100%;
+                height: 14px;
+                background-color: #E8E4DE;
+                border-radius: 4px;
+            }
+        }
+    }
+}

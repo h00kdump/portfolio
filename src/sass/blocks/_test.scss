@@ -1,0 +1,10 @@
+.lottie {
+    height: 100vh;
+    background-color: blue;
+    padding-top: 140px;
+    &__animation {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+}
