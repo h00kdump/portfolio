@@ -9,3 +9,14 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active')
 })
+
+
+const PercentCounters = document.querySelectorAll('.iuse__percent-quantity');
+const PercentLines = document.querySelectorAll('.iuse__percent-loader-wrapper .iuse__percent-loader');
+
+console.log(PercentCounters);
+console.log(PercentLines);
+
+PercentCounters.forEach( (item, i) => {
+    PercentLines[i].style.width = item.innerHTML;
+})
