@@ -1,14 +1,6 @@
 .iuse {
     padding-top: 120px;
     &__title {
-        position: relative;
-        text-align: center;
-        z-index: 1;
-        @include before_circle;
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
         &-2 {
             display: block;
             position: relative;
@@ -22,10 +14,6 @@
                 transform: translateY(-50%);
             }
         }
-    }
-    &__subtitle {
-        text-align: center;
-        margin-top: 10px;
     }
     &__skill {
         padding: 30px;
