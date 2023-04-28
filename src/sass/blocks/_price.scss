@@ -5,7 +5,8 @@
         padding-left: 75px;
         padding-right: 75px;
         display: grid;
-        grid-template: repeat(3, 1fr) / repeat(2, 366px);
+        grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 366px);
+        grid-auto-rows: minmax(44px, auto);
         justify-content: space-between;
         row-gap: 15px;
 
@@ -15,7 +16,8 @@
         /* height: 44px; */
         position: relative;
         display: grid;
-        grid-template: 1fr auto / auto 150px;
+        grid-template: repeat(2, minmax(21, auto)) / repeat(2, auto);
+        row-gap: 5px;
         justify-content: space-between;
         /* align-content: space-between; */
         &-head {
@@ -34,7 +36,8 @@
             font-size: 12px;
         }
         &-cost {
-            text-align: right;
+            justify-self: end;
+            /* text-align: right; */
         }
     }
 
