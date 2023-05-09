@@ -17,6 +17,26 @@
     .sidepanel {
         display: none;
     }
+    .about {
+        padding-top: 80px;
+        &__wrapper {
+            column-gap: 40px;
+            row-gap: 20px;
+        }
+        &__skills {
+            grid-template: repeat(2, minmax(50px, auto)) / repeat(1, minmax(115px, auto));
+            &-item {
+                column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            padding: 60px 0 0 0;
+            column-gap: 10%;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -27,10 +47,30 @@
         &_fz48 {
             font-size: 36px;
         }
+        &_fz36 {
+            font-size: 28px;
+        }
     }
     .promo {
         &__title {
             max-width: 400px;
+        }
+    }
+    .about {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: 300px auto;
+            column-gap: 30px;
+        }
+        &__photo {
+            min-height: 400px;
+        }
+        
+    }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(2, auto);
         }
     }
 }
@@ -41,7 +81,10 @@
     }
     .title {
         &_fz48 {
-            font-size: 28px;
+            font-size: 26px;
+        }
+        &_fz36 {
+            font-size: 24px;
         }
     }
     .promo {
@@ -49,6 +92,39 @@
             max-width: 300px;
         }
     }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: minmax(300px, auto);
+            grid-template-rows: 360px minmax(100px, auto);
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        &__skills {
+            grid-template: repeat(1, minmax(50px, auto)) / repeat(1, minmax(115px, auto));
+            &-item {
+                column-gap: 20px;
+            }
+        }
+        &__photo {
+            min-height: 360px;
+            grid-row: 1/2;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-columns: repeat(1, auto);
+            row-gap: 30px;
+        }
+    }
+
 }
 
 @media (max-width: 568px) {
@@ -85,6 +161,15 @@
                     top: 5px;
                 }
             }
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-rows: 340px minmax(100px, auto);
+        }
+        &__photo {
+            min-height: 340px;
         }
     }
 
