@@ -25,7 +25,7 @@
             margin-top: 60px;
             position: relative;
             display: grid;
-            grid-template-columns: repeat(4, minmax(270px, auto));
+            grid-template-columns: repeat(auto-fit, minmax(270px, auto));
             column-gap: 12px;
             grid-template-rows: minmax(270px, auto);
             row-gap: 12px;
@@ -51,9 +51,10 @@
         &-wrapper {
             margin-top: 90px;
             display: grid;
-            grid-template-columns: repeat(3, minmax(350px, auto));
+            grid-template-columns: repeat(auto-fit, minmax(350px, auto));
             column-gap: 45px;
             grid-template-rows: minmax(70px, auto);
+            row-gap: 20px;
         }
         &-name {
             display: flex;
