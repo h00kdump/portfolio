@@ -16,7 +16,8 @@
         /* height: 44px; */
         position: relative;
         display: grid;
-        grid-template: repeat(2, minmax(21, auto)) / repeat(2, auto);
+        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+        /* grid-template: repeat(2, minmax(21px, auto)) / repeat(auto-fit, minmax(366px, auto)); */
         row-gap: 5px;
         justify-content: space-between;
         /* align-content: space-between; */

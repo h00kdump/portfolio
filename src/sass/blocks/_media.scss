@@ -46,6 +46,23 @@
             }
         }
     }
+    .portfolio {
+        padding-top: 80px;
+        &__wrapper {
+            margin-top: 60px;
+            grid-template: repeat(2, 280px) / repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .vertical, .horisontal {
+            grid-row: unset;
+            grid-column: unset;
+        }
+    }
+    .contacts {
+        margin-top: 80px;
+        &__wrapper {
+            column-gap: 40px;
+        }
+    }
     
 }
 
@@ -81,6 +98,28 @@
         padding-top: 80px;
         &__wrapper {
             grid-template-columns: repeat(2, auto);
+        }
+    }
+    .price {
+        margin-top: 40px;
+        &__grid {
+            margin-top: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+            justify-content: space-between;
+        }
+        &__cell {
+            width: 280px;
+        }
+    }
+    .contacts {
+        margin-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__photo {
+            display: none;
         }
     }
 }
@@ -142,7 +181,35 @@
             }
         }
     }
-
+    .portfolio {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+    .price {
+        &__grid {
+            justify-content: center;
+        }
+    }
+    .contacts {
+        margin-top: 40px;
+        &__form {
+            grid-template: 45px 45px 45px / repeat(1,minmax(100px, auto));
+            grid-auto-rows: 45px;
+        }
+        &__photo {
+            display: none;
+        }
+        &__textarea {
+            grid-column: unset;
+            grid-row: 3 / 5;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: auto 1fr;
+        }
+    }
 }
 
 @media (max-width: 568px) {
@@ -203,6 +270,27 @@
                 grid-template-columns: repeat(auto-fit, minmax(300px, auto));
                 row-gap: 15px;
             }
+        }
+    }
+    .price {
+        &__grid {
+            padding-left: 25px;
+            padding-right: 0px;
+        }
+    }
+    .contacts {
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+        &__policy {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            margin: 0 auto;
+            order: -1;
+            margin-bottom: 20px;
         }
     }
 
